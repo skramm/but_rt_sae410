@@ -9,7 +9,7 @@ pour les aider à réaliser leur projet.
 Les démos sont dockerisées, elle devraient tourner quel que soit la machine cible.
 
 
-## 1 - Demo Jinja2
+## 1 - Demo Jinja
 
 Pour les faire tourner:
 ```
@@ -71,8 +71,8 @@ Voir le fichier Python ainsi que le template pour comprendre comment ça marche.
 
 Lancer:
 ```
-./test1.py
+./test2.py
 ```
 
 Ceci va générer une unique page avec un tableau avec un nombre de lignes dynamique, pas de boucle dans le code Python.
-Dans cette démo, la "boucle" est dans le "template" html.
+Dans cette démo, la "boucle" est dans le "template" `test2.html`.
