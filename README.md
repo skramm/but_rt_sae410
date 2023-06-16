@@ -107,8 +107,9 @@ Dans cette démo, la "boucle" est dans le "template" [test2.html](demo_jinja/tem
 
 (d'après https://zetcode.com/python/jinja/
 
-Cette démo montre comment on peut avoir des tests (if/else) dans le template HTML
-et comment on peut passer une liste composée de paire JSON:
+Cette démo montre comment on peut avoir des tests (if/else) dans le template HTML,
+comment on charge un fichier contenant un tablean JSON, 
+et comment on peut passer une liste composée de paires JSON:
 
 Lancer [test3.py](demo_jinja/test3.py):
 ```
