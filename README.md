@@ -105,6 +105,8 @@ Dans cette démo, la "boucle" est dans le "template" [test2.html](demo_jinja/tem
 
 ### 1.3 - demo Jinja 3
 
+(d'après https://zetcode.com/python/jinja/
+
 Cette démo montre comment on peut avoir des tests (if/else) dans le template HTML
 et comment on peut passer une liste composée de paire JSON:
 
