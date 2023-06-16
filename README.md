@@ -21,16 +21,16 @@ cd demo_jinja
 Ceci doit ouvir un shell dans le conteneur, dans un dossier `/srv`.
 On peut ensuite taper le nom d'une des démos pour l'exécuter (voir la liste avec `$ ls -l *.py`).
 
-Le conteneur a un lien statique avec le dossier dans la machine ("bind mount"), donc vous pouvez modifier le code.
+Le conteneur a un lien statique avec le dossier dans la machine ("bind mount"), donc vous pouvez modifier le code et tester sans avoir besoin de "rebuilder" le conteneur.
 
 **ATTENTION**: si vous voulez expérimenter avec le code, mieux vaut faire une copie de tout le dossier ailleurs (dans lequel vous pourrez virer le dossier `.git`).
 En effet, si vous faites des modifs, lorsque vous voudrez synchroniser le dossier avec mes modifs à moi (via un `git pull`), il y aura des conflits.
 
 
 ### 1.1 - demo Jinja 1
-Lancer:
+Lancer [test1.py](demo_jinja/test1.py):
 ```
-./test1.py
+$ ./test1.py
 ```
 ce qui va provoquer l'affichage de 3 pages HTML dans la console.
 
@@ -69,10 +69,11 @@ Voir le fichier Python ainsi que le template pour comprendre comment ça marche.
 
 ### 1.2 - demo Jinja 2
 
-Lancer:
+Lancer [test2.py](demo_jinja/test2.py):
 ```
-./test2.py
+$ ./test2.py
 ```
 
 Ceci va générer une unique page avec un tableau avec un nombre de lignes dynamique, pas de boucle dans le code Python.
-Dans cette démo, la "boucle" est dans le "template" `test2.html`.
+Dans cette démo, la "boucle" est dans le "template" [test2.html](demo_jinja/templates/test2.html).
+
