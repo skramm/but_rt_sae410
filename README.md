@@ -9,21 +9,33 @@ pour les aider à réaliser leur projet.
 Les démos sont dockerisées, elle devraient tourner quel que soit la machine cible.
 
 
-## Demo Jinja2
+## 1 - Demo Jinja2
 
-Pour la faire tourner:
+Pour les faire tourner:
 ```
 cd demo_jinja
-./build.sh
-./run.sh
+./build.sh # crée une image Docker
+./run.sh  # lance le Docker (bash sous Debian avec tout déjà installé)
 ```
 
 Ceci doit ouvir un shell dans le conteneur, dans un dossier `/srv`.
-On peut ensuite taper
+On peut ensuite taper le nom d'une des démos pour l'exécuter (voir la liste avec `$ ls -l *.py`).
+
+Le conteneur a un lien statique avec le dossier dans la machine ("bind mount"), donc vous pouvez modifier le code.
+
+**ATTENTION**: si vous voulez expérimenter avec le code, mieux vaut faire une copie de tout le dossier ailleurs (dans lequel vous pourrez virer le dossier `.git`).
+En effet, si vous faites des modifs, lorsque vous voudrez synchroniser le dossier avec mes modifs à moi (via un `git pull`), il y aura des conflits.
+
+
+### 1.1 - demo Jinja 1
+Lancer:
 ```
 ./test1.py
 ```
-ce qui va provoquer l'affichage de 3 pages HTML dans la console:
+ce qui va provoquer l'affichage de 3 pages HTML dans la console.
+
+La boucle est ici dans le code Python, donc on appelle 3 fois la fonction de rendering, qui va donc générer 3 pages
+(ici, on se contente de les afficher dans la console, mais avec Flask elle seront disponibles via le serveur).
 ```
 ************** FRUIT= apple
 <html>
@@ -55,3 +67,12 @@ ce qui va provoquer l'affichage de 3 pages HTML dans la console:
 ```
 Voir le fichier Python ainsi que le template pour comprendre comment ça marche.
 
+### 1.2 - demo Jinja 2
+
+Lancer:
+```
+./test1.py
+```
+
+Ceci va générer une unique page avec un tableau avec un nombre de lignes dynamique, pas de boucle dans le code Python.
+Dans cette démo, la "boucle" est dans le "template" html.

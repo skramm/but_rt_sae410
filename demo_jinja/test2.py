@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# test1.py
+# test2.py
 import jinja2
 
 # sans Flask, on ne peut pas appeler directement la fonction render_template().
@@ -16,10 +16,8 @@ def render_jinja_html(template_loc,file_name,**context):
     
     
 fruits = ["apple", "banana", "cherry"]
-for x in fruits:
-	print("************** FRUIT=",x)
-	res=render_jinja_html( 'templates/', 'test1.html', fruit=x )
-	print(res)
+res=render_jinja_html( 'templates/', 'test2.html', liste_fruits=fruits )
+print(res)
 
 
 
