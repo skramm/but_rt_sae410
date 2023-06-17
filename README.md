@@ -8,12 +8,10 @@ pour les aider à réaliser leur projet.
 
 Les démos sont dockerisées, elle devraient tourner quel que soit la machine cible.
 
-**Rappel**: ce dépot est suceptible d'évoluer, donc une fois que vous l'avez clonée, avant toute séance de travail:
+**Rappel**: ce dépot est suceptible d'évoluer, donc une fois que vous l'avez cloné, avant toute séance de travail:
 ```
 $ git pull
 ```
-
-
 
 ## 1 - Demo Jinja
 
@@ -31,6 +29,12 @@ Le conteneur a un lien statique avec le dossier dans la machine ("bind mount"), 
 
 **ATTENTION**: si vous voulez expérimenter avec le code, mieux vaut faire une copie de tout le dossier ailleurs (dans lequel vous pourrez virer le dossier `.git`).
 En effet, si vous faites des modifs, lorsque vous voudrez synchroniser le dossier avec mes modifs à moi (via un `git pull`), il y aura des conflits.
+
+Pour les machines Windows, il faudra:
+* renommer les scripts `.sh` en `.bat`;
+* vérifier que le programme `docker est dans le path;
+* au besoin les éditer en mettant toute la commande sur la même ligne (Le shell Windows ne reconnait pas le `\`);
+* les lancer sans le `./` en tête.
 
 
 ### 1.1 - demo Jinja 1
