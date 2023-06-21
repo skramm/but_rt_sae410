@@ -31,8 +31,9 @@ Le conteneur a un lien statique avec le dossier dans la machine ("bind mount"), 
 En effet, si vous faites des modifs, lorsque vous voudrez synchroniser le dossier avec mes modifs à moi (via un `git pull`), il y aura des conflits.
 
 Pour les machines Windows, il faudra:
+
 * renommer les scripts `.sh` en `.bat`;
-* vérifier que le programme `docker est dans le path;
+* vérifier que le programme `docker` est dans le path;
 * au besoin les éditer en mettant toute la commande sur la même ligne (Le shell Windows ne reconnait pas le `\`);
 * les lancer sans le `./` en tête.
 
@@ -112,7 +113,7 @@ Dans cette démo, la "boucle" est dans le "template" [test2.html](demo_jinja/tem
 (d'après https://zetcode.com/python/jinja/
 
 Cette démo montre comment on peut avoir des tests (if/else) dans le template HTML,
-comment on charge un fichier contenant un tablean JSON, 
+comment on charge un fichier contenant un tableau JSON, 
 et comment on peut passer une liste composée de paires JSON:
 
 Lancer [test3.py](demo_jinja/test3.py):
