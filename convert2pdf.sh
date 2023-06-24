@@ -4,12 +4,12 @@
 
 set -x
 pandoc -V papersize=A4 \
-	--metadata pagetitle="saé410" \
+	--metadata pagetitle="IUT RT Rouen - 2022-2023 - saé410" \
 	-V margin-left=0.7in \
 	-V margin-right=0.7in \
 	-V margin-top=0.7in \
 	-V margin-bottom=0.7in \
-	README.md -t html -o t2.pdf
+	README.md -t html -o README.pdf
 	
 	
 

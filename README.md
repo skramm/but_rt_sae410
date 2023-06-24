@@ -2,7 +2,7 @@
 
 * S. Kramm - IUT R&T Rouen
 * juin 2023
-* https://github.com/skramm/but_rt_sae410
+* [github.com/skramm/but_rt_sae410](https://github.com/skramm/but_rt_sae410)
 
 Ce dépot a vocation à fournir aux étudiants BUT RT2 des démonstrations de briques logicielles
 pour les aider à réaliser leur projet saé41.
@@ -111,7 +111,7 @@ Dans cette démo, la "boucle" est dans le "template" [test2.html](demo_jinja/tem
 
 ### 1.3 - demo Jinja 3
 
-(d'après https://zetcode.com/python/jinja/
+D'après [zetcode.com/python/jinja/](https://zetcode.com/python/jinja/)
 
 Cette démo montre comment on peut avoir des tests (if/else) dans le template HTML,
 comment on charge un fichier contenant un tableau JSON, 
