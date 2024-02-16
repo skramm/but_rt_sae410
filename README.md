@@ -15,11 +15,14 @@ $ git pull
 
 ## 1 - Demo Jinja
 
-Pour les faire tourner:
+Le code ici fait une démonstration de l'utilisation des templates Jinja **en dehors** de l'utilisation de Flask:
+la génération du html se fait directement dans la console.
+
+Pour faire tourner les démos:
 ```
-cd demo_jinja
-./build.sh # crée une image Docker
-./run.sh  # lance le Docker (bash sous Debian avec tout déjà installé)
+$ cd demo_jinja
+$ ./build.sh # crée une image Docker
+$ ./run.sh  # lance le Docker (bash sous Debian avec tout déjà installé)
 ```
 
 Ceci doit ouvir un shell dans le conteneur, dans un dossier `/srv`.
@@ -27,18 +30,20 @@ On peut ensuite taper le nom d'une des démos pour l'exécuter (voir la liste av
 
 Le conteneur a un lien statique avec le dossier dans la machine ("bind mount"), donc vous pouvez modifier le code et tester sans avoir besoin de "rebuilder" le conteneur.
 
-**ATTENTION**: si vous voulez expérimenter avec le code, mieux vaut faire une copie de tout le dossier ailleurs (dans lequel vous pourrez virer le dossier `.git`).
-En effet, si vous faites des modifs, lorsque vous voudrez synchroniser le dossier avec mes modifs à moi (via un `git pull`), il y aura des conflits.
+**ATTENTION**: si vous voulez expérimenter avec le code, mieux vaut faire une copie de tout le dossier ailleurs
+(dans lequel vous pourrez virer le dossier `.git`).
+En effet, si vous faites des modifs, lorsque vous voudrez synchroniser le dossier avec mes modifs à moi (via un `git pull`),
+il y aura des conflits.
 
-Pour les machines Windows, il faudra:
+Pour les machines Windows, il faudra (à confirmer?):
 * renommer les scripts `.sh` en `.bat`;
-* vérifier que le programme `docker est dans le path;
+* vérifier que le programme `docker` est dans le path;
 * au besoin les éditer en mettant toute la commande sur la même ligne (Le shell Windows ne reconnait pas le `\`);
 * les lancer sans le `./` en tête.
 
 
 ### 1.1 - demo Jinja 1
-Lancer [test1.py](demo_jinja/test1.py):
+Lancer (depuis le shell du conteneur) [test1.py](demo_jinja/test1.py):
 ```
 $ ./test1.py
 ```
