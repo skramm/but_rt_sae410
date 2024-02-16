@@ -127,5 +127,31 @@ Lancer [test3.py](demo_jinja/test3.py):
 $ ./test3.py
 ```
 Voir le template [test3.html](demo_jinja/templates/test3.html).
+```
+<html>
+<body>
+<h2>Demo tableau 2 colonnes</h2>
+<table>
+<tr><th>Num</th><th></th></tr>
+<tr><td> Andrej </td><td>
+34
+</td></tr>
+<tr><td> Mark </td><td>
+MINOR</td></tr>
+<tr><td> Thomas </td><td>
+44
+</td></tr>
+<tr><td> Lucy </td><td>
+MINOR</td></tr>
+<tr><td> Robert </td><td>
+23
+</td></tr>
+<tr><td> Dragomir </td><td>
+54
+</td></tr>
+</table>
+</body>
+</html>
+```
 
 
